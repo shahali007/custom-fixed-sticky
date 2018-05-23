@@ -1,0 +1,195 @@
+@font-face{font-family:'SolaimanLipi';src:url('https://cdn.jagonews24.com/common/fonts/solaimanlipi_20-04-07.eot');src:url('https://cdn.jagonews24.com/common/fonts/solaimanlipi_20-04-07.eot') format('embedded-opentype'),
+url('https://cdn.jagonews24.com/common/fonts/solaimanlipi_20-04-07.woff') format('woff'),
+url('https://cdn.jagonews24.com/common/fonts/solaimanlipi_20-04-07.ttf') format('truetype'),
+url('https://cdn.jagonews24.com/common/fonts/solaimanlipi_20-04-07.svg') format('svg');}
+body{font-family:SolaimanLipi;}
+
+.navbar{
+	z-index: 10000000;
+}
+.top,
+.bottom {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.top.fixedsticky-on,
+.bottom.fixedsticky-on {
+	width: 96%;
+}
+
+/* Fixed-Sticky CSS */
+.top {
+	top: 0; 
+}
+.bottom {
+	bottom: 0;
+}
+#top-a {
+	top: 0;
+	z-index: 1000000!important;
+}
+#bottom-b {
+	bottom: 16px;
+}
+
+/* Demo Colors */
+#top-a,
+#bottom-a {
+	background: #d4eefa;
+}
+#top-b,
+#bottom-b {
+	background-color: #0f0;
+	background-color: rgba(0,255,0,.6);
+}
+#top-share{
+	top:80px;
+}
+.details img{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.container.details .col-sm-7 p{
+	font-size:18px;
+	line-height: 1.5;
+}
+blockquote {
+    padding: 0px 0 0 15px;
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    border-left: 5px solid #fb1313;
+    color: #716f6f;
+    font-style: italic;
+}
+@media ( max-width: 25em ) {
+	#top-a {
+		height: 200px;
+	}
+}
+
+/* share button */
+.wrp {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.wrp::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.icon {
+    display: block;
+    font-size: 20px;
+    line-height: 44px;
+    height: 44px;
+    width: 44px;
+    margin-bottom: 10px;
+    color: black!important;
+    border-radius: 100%;
+    position: relative;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+}
+.icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 100%;
+  background: rgba(0,0,0,0.1);
+  z-index: -1;
+}
+.icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  background: #4099ff;
+  border-radius: 100%;
+  z-index: -1;
+}
+.icon:hover {
+  color: #000!important;
+  box-shadow: 0 0 11px 0 #c7c7c7;
+}
+.icon:hover::after {
+  animation-name: bubble;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.icon-twitter {
+  color: #4099ff;
+}
+.icon-twitter::after {
+  background: #4099ff;
+}
+.icon-facebook {
+  color: #3b5998;
+}
+.icon-facebook::after {
+  background: #3b5998;
+}
+.icon-instagram {
+  color: #3f729b;
+}
+.icon-instagram::after {
+  background: #3f729b;
+}
+.icon-gplus {
+  color: #dc4e41;
+}
+.icon-gplus::after {
+  background: #dc4e41;
+}
+@-moz-keyframes bubble {
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes bubble {
+  100% {
+    transform: scale(1);
+  }
+}
+@-o-keyframes bubble {
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bubble {
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes bubble2 {
+  100% {
+    color: #fff;
+  }
+}
+@-webkit-keyframes bubble2 {
+  100% {
+    color: #fff;
+  }
+}
+@-o-keyframes bubble2 {
+  100% {
+    color: #fff;
+  }
+}
+@keyframes bubble2 {
+  100% {
+    color: #fff;
+  }
+}
